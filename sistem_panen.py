@@ -1,20 +1,20 @@
+# ===================================================
+# FITUR 1: Input Data Panen (Dikerjakan Anggota A)
+# Branch: feature-input
+# ===================================================
 
 def input_data_panen():
-    print("=== SISTEM PENCATATAN HASIL PANEN ===")
-    
-    komoditas = input("Masukkan nama komoditas: ")
-    jumlah_kg = float(input("Masukkan jumlah hasil panen (kg): "))
+    """
+    Fungsi untuk menerima input data transaksi panen dari pengguna.
+    Mengembalikan data berupa Dictionary.
+    """
+    print("=== INPUT DATA HASIL PANEN ===")
+    nama_komoditas = input("Masukkan nama komoditas (misal: Padi/Jagung): ")
     harga_per_kg = float(input("Masukkan harga per kg (Rp): "))
+    jumlah_kg = float(input("Masukkan jumlah panen (kg): "))
     
-    total = jumlah_kg * harga_per_kg
-    
-    print("\n=== DATA HASIL PANEN ===")
-    print("Komoditas       :", komoditas)
-    print("Jumlah panen    :", jumlah_kg, "kg")
-    print("Harga per kg    : Rp", harga_per_kg)
-    print("Total biaya     : Rp", total)
-    
-    return komoditas, jumlah_kg, harga_per_kg, total
-
-
-input_data_panen()
+    return {
+        "komoditas": nama_komoditas,
+        "harga_per_kg": harga_per_kg,
+        "jumlah_kg": jumlah_kg
+    }
