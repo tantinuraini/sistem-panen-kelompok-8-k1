@@ -4,9 +4,9 @@
 * **Anggota C:** Fitur Perhitungan Diskon & Total (`feature-diskon`)
 
 ## 🛠️ Deskripsi Program
-Aplikasi Python ini digunakan untuk mencatat transaksi penjualan komoditas panen, menghitung potongan diskon berdasarkan besaran subtotal, serta mencetak laporan/struk transaksi akhir secara otomatis.
+Aplikasi Python ini digunakan untuk menghitung subtotal transaksi, menentukan potongan diskon berdasarkan besaran subtotal, serta menghitung total biaya setelah diskon.
 
 ## 🚀 Cara Menjalankan Program
 Jalankan perintah berikut di terminal:
 ```bash
-python app.py
+python diskon_panen.py
